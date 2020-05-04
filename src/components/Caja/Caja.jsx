@@ -21,7 +21,7 @@ export default class Caja extends Component {
         Object.keys(ventas).forEach((keyname, index) => {
             subtotal += ventas[keyname].subtotal;
             iva += ventas[keyname].iva;
-            total += parseInt(ventas[keyname].iva);
+            total += parseInt(ventas[keyname].total);
         });
 
         this.setState({
