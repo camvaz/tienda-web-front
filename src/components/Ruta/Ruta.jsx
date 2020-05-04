@@ -9,6 +9,11 @@ const Navbar = styled.div`
     display: flex;
     align-items: center;
     padding: 1.7rem 1.5rem;
+    svg {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+    }
     .icons {
         margin-left: auto;
         display: flex;
@@ -64,7 +69,7 @@ export default class Ruta extends Component {
                     <>
                         <Navbar>
                             <GiRolledCloth />
-                            <h1>Tienda web</h1>
+                            <h1>Dope</h1>
                             <div className="icons">
                                 <p>Hecho con:</p>
                                 <FaNodeJs />
@@ -85,13 +90,20 @@ export default class Ruta extends Component {
                                         Categorias
                                     </Link>
                                     <div className="sublinks">
-                                        <Link to="/ropa">Ropa</Link>
-                                        <Link to="/accesorios">Accesorios</Link>
-                                        <Link to="/calzado">Calzado</Link>
-                                        <Link to="/arte">Arte</Link>
+                                        <Link to="/categoria/ropa">Ropa</Link>
+                                        <Link to="/categoria/accesorios">
+                                            Accesorios
+                                        </Link>
+                                        <Link to="/categoria/calzado">
+                                            Calzado
+                                        </Link>
+                                        <Link to="/categoria/arte">Arte</Link>
                                     </div>
                                     <Link className="main" to="/cart">
                                         Carrito
+                                    </Link>
+                                    <Link to="/caja" className="main">
+                                        Caja
                                     </Link>
                                 </div>
                             </SideMenu>

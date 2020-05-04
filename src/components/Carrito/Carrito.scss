@@ -1,0 +1,39 @@
+#carrito {
+    width: 90%;
+    .item-grid {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        .item-description {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            img {
+                width: 10%;
+            }
+            svg {
+                cursor: pointer;
+                width: 18px;
+                height: 18px;
+            }
+            .qty-handler {
+                display: flex;
+                align-items: center;
+                p {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+    .totales {
+        display: flex;
+        align-items: flex-start;
+        button {
+            margin-left: auto;
+        }
+    }
+}
